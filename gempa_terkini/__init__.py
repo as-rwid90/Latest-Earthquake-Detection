@@ -3,16 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def data_extraction():
-    """
-    Tanggal: 19 Agustus 2023
-    Waktu: 01:29:15 WIB
-    Magnitudo: 5.0
-    Kedalaman: 10 km
-    Lokasi: 8.99 LS - 111.06 BT
-    Keterangan: Pusat gempa berada di laut 90 km Barat Daya Pacitan
-    Dirasakan: III Pacitan, II Gunungkidul, II Bantul, II Yogyakarta
-    :return:
-    """
+
     try:
         content = requests.get('https://bmkg.go.id')
     except Exception:
